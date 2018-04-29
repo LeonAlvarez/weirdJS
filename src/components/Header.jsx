@@ -2,14 +2,6 @@ import React from "react";
 import Link from "gatsby-link";
 
 class Header extends React.Component {
-   
-  handleClick(e) {
-    const el = document.getElementById("nav");
-    e.preventDefault();
-    /* el.classList.toggle("block");
-    el.classList.toggle("hidden"); */
-  };
-
   render() {
     return (
       <nav className="bg-yellow">
@@ -20,10 +12,7 @@ class Header extends React.Component {
             </span>
           </Link>
 
-          <button
-            className="block md:hidden border border-white flex items-center px-3 py-2 rounded text-black"
-            onClick={this.handleClick(event)}
-          >
+          <button className="block md:hidden border border-white flex items-center px-3 py-2 rounded text-black">
             <svg
               className="fill-current h-3 w-3"
               viewBox="0 0 20 20"
